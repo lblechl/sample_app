@@ -5,12 +5,14 @@ gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 
 group :development do
+  gem 'ruby-debug19'
   gem 'heroku' # railstutorial.org overlooks this
   gem 'rspec-rails', '2.3.0'
   gem 'annotate-models', '1.0.4'
 end
 
 group :test do
+  gem 'ruby-debug19'
   gem 'rspec', '2.3.0'
   gem 'webrat', '0.7.1'
   gem 'autotest-notification', '2.3.1'
@@ -26,7 +28,6 @@ end
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
-gem 'ruby-debug19'
 
 # Bundle the extra gems:
 # gem 'bj'
