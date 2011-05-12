@@ -1,0 +1,1000 @@
+  811  pico example_user.rb
+  812  require './example_user'
+  813  require 'example_user'
+  814  exit
+  815  ok doing some stuff here
+  816  did some stuff
+  817  alright
+  818  exit
+  819  cd rails_projects/
+  820  cd my_throw_away_dir/
+  821  cd ..
+  822  cd sample_app/
+  823  cd spec/
+  824  ls
+  825  cd modules
+  826  cd ..
+  827  pico deleteme_spec.rb
+  828  ls
+  829  cd spec/
+  830  ls
+  831  mkdir models
+  832  cd ..
+  833  ls
+  834  mv ./deleteme_spec.rb ./spec/models/deleteme_spec.rb
+  835  cd spec/models/
+  836  ls
+  837  pico deleteme_spec.rb 
+  838  rm deleteme_spec.rb 
+  839  cd ..
+  840  rmdir models/
+  841  ls
+  842  ps aux
+  843  cd rails_projects/sample_app/
+  844  git checkout -b filling-in-layout
+  845  git branch
+  846  ls
+  847  rm example_user.rb 
+  848  pico app/views/layouts/application.html.erb 
+  849  git add .
+  850  git commit -m "Chp 5 changed application.html.erb"
+  851  pico app/views/pages/home.html.erb 
+  852  ls
+  853  cd public/images/
+  854  cd /home/student/Desktop/
+  855  ls
+  856  mv logo.png /home/student/rails_projects/sample_app/public/images/logo.png
+  857  cd ..
+  858  cd rails_projects/sample_app/public/stylesheets/
+  859  pico custom.css
+  860  cd ../..
+  861  pico app/views/layouts/application.html.erb 
+  862  pico app/views/layouts/_stylesheets.html.erb
+  863  pico app/views/layouts/application.html.erb 
+  864  pico app/views/layouts/_header.html.erb
+  865  pico app/views/layouts/_footer.html.erb
+  866  pico app/views/layouts/application.html.erb 
+  867  pico public/stylesheets/custom.css 
+  868  rails generate integration_test layout_links
+  869  git add .
+  870  git commit -m "Finished css and generated integration test for layout links"
+  871  pico spec/requests/layout_links_spec.rb 
+  872  autotest
+  873  pico .bashrc
+  874  cd rails_projects/
+  875  ls
+  876  cd sample_app/
+  877  pico app/controllers/pages_controller.rb 
+  878  pico app/views/pages/help.html.erb 
+  879  cd rails_projects/sample_app/
+  880  ls
+  881  ls -a
+  882  cd .rspec
+  883  cd spec/
+  884  ls
+  885  ls -a
+  886  cd rails_projects/sample_app/
+  887  cd spec/requests/
+  888  ls -a
+  889  pico .autotest
+  890  git add .
+  891  cd rails_projects/sample_app/
+  892  ls
+  893  cd rails_projects/sample_app/
+  894  ls
+  895  pico config/routes.rb 
+  896  rspec spec/
+  897  pico config/routes.rb 
+  898  cd rails_projects/sample_app/
+  899  git rm public/index.html
+  900  git commit -am "Removed default Rails page"
+  901  rspec spec/
+  902  cd rails_projects/sample_app/
+  903  rails s
+  904  cd rails_projects/sample_app/
+  905  cd rails_projects/sa
+  906  cd rails_projects/sample_app/
+  907  pico config/routes.rb 
+  908  rails dbconsole
+  909  cd rails_projects/sample_app/
+  910  rails dbconsole
+  911  rails g model Bunny name:string fluffly_tail:boolean hop_distance:integer
+  912  cd db/migrate/
+  913  ls
+  914  pico 20110223022430_create_bunnies.rb 
+  915  cd ..
+  916  rails dbconsole
+  917  git clone git@github.com:lblechl/simple_app2.git
+  918  cd ..
+  919  git clone git@github.com:lblechl/simple_app2.git
+  920  ls
+  921  cd simple_app2/
+  922  ls
+  923  pico .rvminfo
+  924  ls
+  925  ls -a
+  926  pico .rvmrc
+  927  gem list
+  928  cd spec/
+  929  ls
+  930  pico spec_helper.rb 
+  931  cd ..
+  932  ls
+  933  cd config/
+  934  ls
+  935  pico routes.rb 
+  936  pico application.rb 
+  937  pico routes.rb 
+  938  git add .
+  939  cd ..
+  940  git init
+  941  cd ..
+  942  cd sample_app/
+  943  cd ..
+  944  cd sample_app/
+  945  cd ..
+  946  mkdir github_lab
+  947  cd github_lab
+  948  git init
+  949  touch README
+  950  git add README
+  951  git commit -m 'first commit'
+  952  git remote add origin git@github.com:lblechl/github_lab.git
+  953  git push -u origin master
+  954  pico README 
+  955  pico todo
+  956  git add README todo
+  957  git commit -m "first changes"
+  958  pico RE
+  959  pico README 
+  960  pico todo
+  961  git add README todo
+  962  git commit -m "second changes"
+  963  pico README 
+  964  pico todo 
+  965  git add README todo
+  966  git commit -m "third set of changes. Now ready to push to github""
+  967  git push origin
+  968  git commit -m "third set of changes. Now ready to push to github"
+  969  git push origin
+  970  cd ..
+  971  git clone git@github.com:tjdooley/github_lab_app.git
+  972  ls
+  973  cd github_lab_app/
+  974  cd rails_projects/
+  975  ls
+  976  cd github_lab_app/
+  977  git diff origin
+  978  pico README 
+  979  git diff origin
+  980  pico todo 
+  981  git add .
+  982  git commit -m "Luke made changes to todo and README"
+  983  git push origin
+  984  cd ..
+  985  cd github_lab
+  986  git pull
+  987  pico README 
+  988  pico todo 
+  989  cd ..
+  990  git clone git@github.com:lblechl/Collaborating-With-Git.git
+  991  ls
+  992  cd Collaborating-With-Git/
+  993  pico README 
+  994  pico todo
+  995  git add .
+  996  git commit -m "Lukes changes"
+  997  git push
+  998  git remote -v
+  999  git remote
+ 1000  cd ~
+ 1001  pico .bash_login
+ 1002  ls -a
+ 1003  pico .bashrc
+ 1004  pico .bash_profile
+ 1005  cd rails_projects/
+ 1006  cd sample_app/
+ 1007  ls
+ 1008  git branch
+ 1009  cd ~
+ 1010  ls -a
+ 1011  pico .bash_profile
+ 1012  rm .bash_profile 
+ 1013  ls
+ 1014  ls -a
+ 1015  pico .bashrc
+ 1016  cd rails_projects/
+ 1017  cd sample_app/
+ 1018  ls
+ 1019  cd config/
+ 1020  cd ..
+ 1021  cd rails_projects/sample_app/
+ 1022  git checkout master
+ 1023  git co -b modeling-users
+ 1024  git branch
+ 1025  rails generate controller Users new
+ 1026  n
+ 1027  rails generate model User name:string email:string
+ 1028  rake db:migrate
+ 1029  git add .
+ 1030  git commit
+ 1031  rake db:rollback
+ 1032  git add .
+ 1033  git commit -m "Rolled back users controller"
+ 1034  rake db:migrate
+ 1035  git add .
+ 1036  git commit -m "Migrated users db back up again"
+ 1037  cd app/models/
+ 1038  cd ../..
+ 1039  pico app/models/user.rb 
+ 1040  pico Gemfile
+ 1041  ls
+ 1042  cd rails_projects/
+ 1043  rails new elephants
+ 1044  cd elephants/
+ 1045  gem list
+ 1046  gem install elephants
+ 1047  clear
+ 1048  git add .
+ 1049  git init
+ 1050  git add .
+ 1051  git commit -m "Initial commit"
+ 1052  rails g scaffold Elephant name:string age:integer forgets:boolean
+ 1053  rake db:migrate
+ 1054  rails s
+ 1055  pico README
+ 1056  git add .
+ 1057  git commit -m "Added README"
+ 1058  git commit --ammend -m "Elephant scaffold"
+ 1059  git log
+ 1060  git commit --ammend "Elephant scaffold"
+ 1061  git log README
+ 1062  git checkout 783
+ 1063  git checkout 783519
+ 1064  git branch 
+ 1065  git commit -m "Decided to use verbose, default README"
+ 1066  clear
+ 1067  git log README
+ 1068  cd ..
+ 1069  rm -rf elephants/
+ 1070  ls
+ 1071  rm -rf my_throw_away_dir/
+ 1072  ls
+ 1073  exit
+ 1074  cd .rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/
+ 1075  pico console.rb 
+ 1076  cd rails_projects/sample_app/
+ 1077  tail -f log/development.log 
+ 1078  pico /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb 
+ 1079  cd rails_projects/sample_app/
+ 1080  pico db/development.sqlite3
+ 1081  pico db/test.sqlite3 
+ 1082  rake db:test:prepare
+ 1083  pico db/test.sqlite3 
+ 1084  cd rails_projects/sample_app/
+ 1085  pico app/models/user.rb 
+ 1086  cd rails_projects/sample_app/
+ 1087  tail -f log/development.log 
+ 1088  exit
+ 1089  cd rails_projects/sample_app/
+ 1090  rails console --sandbox
+ 1091  cd db/migrate/
+ 1092  ls
+ 1093  rake
+ 1094  cd ..
+ 1095  pico app/models/user.rb 
+ 1096  rails console --sandbox
+ 1097  pico app/views/users/show.html.erb
+ 1098  pico app/controllers/users_controller.rb 
+ 1099  cd rails_projects/sample_app/
+ 1100  rails s
+ 1101  cd rails_projects/sample_app/
+ 1102  pico app/models/user.rb 
+ 1103  pico spec/models/user_spec.rb 
+ 1104  pico app/models/user.rb 
+ 1105  pico spec/models/user_spec.rb 
+ 1106  pico app/models/user.rb 
+ 1107  pico spec/models/user_spec.rb 
+ 1108  pico app/models/user.rb 
+ 1109  pico spec/models/user_spec.rb 
+ 1110  pico app/models/user.rb 
+ 1111  pico spec/models/user_spec.rb 
+ 1112  pico app/models/user.rb 
+ 1113  rails generate migration add_email_uniqueness_index
+ 1114  pico db/migrate/
+ 1115  cd db/migrate/
+ 1116  ls
+ 1117  pico 20110308191235_add_email_uniqueness_index.rb 
+ 1118  cd ../..
+ 1119  rake db:migrate
+ 1120  git add .
+ 1121  git commit -m "Changes up to 6.3.1"
+ 1122  pico app/views/layouts/application.html.erb 
+ 1123  rails console
+ 1124  rails console test
+ 1125  rails s
+ 1126  rails s --environment production
+ 1127  rails db:migrate RAILS_ENV=production
+ 1128  rails s --environment production
+ 1129  heroku console
+ 1130  rails console
+ 1131  exit
+ 1132  cd rails_projects/sample_app/
+ 1133  rspec spec/models/user_spec.rb 
+ 1134  pico spec/models/user_spec.rb 
+ 1135  rspec spec/models/user_spec.rb 
+ 1136  pico app/models/user.rb 
+ 1137  pico spec/models/user_spec.rb 
+ 1138  rspec spec/models/user_spec.rb 
+ 1139  pico spec/models/user_spec.rb 
+ 1140  rspec spec/models/user_spec.rb 
+ 1141  exit
+ 1142  cd rails_projects/sample_app/
+ 1143  sqlitebrowser
+ 1144  git add .
+ 1145  git commit -m "Up to section 6.3.3"
+ 1146  pico config/routes.rb 
+ 1147  git add .
+ 1148  git commit -m "Finished first cut of the User model"
+ 1149  git push
+ 1150  git push heroku master
+ 1151  heroku open
+ 1152  git branch
+ 1153  git co master
+ 1154  git branch
+ 1155  git push
+ 1156  git push heroku master
+ 1157  git co master
+ 1158  git push
+ 1159  git commit -m "Finished first cut of the User model"
+ 1160  git add .
+ 1161  git commit -m "Finished first cut of the User model"
+ 1162  git push
+ 1163  git remote add origin git@github.com:lblechl/sample_app.git
+ 1164  git push origin master
+ 1165  git status
+ 1166  pico config/routes.rb 
+ 1167  git add .
+ 1168  git commit -m "Finished first cut of the User model"
+ 1169  git push origin master
+ 1170  git push heroku master
+ 1171  git branch
+ 1172  git merge modeling-users
+ 1173  git branch
+ 1174  git push
+ 1175  git push heroku master
+ 1176  cd rails_projects/
+ 1177  ls
+ 1178  cd mileage_tracker/
+ 1179  ruby -v
+ 1180  cd rails_projects/
+ 1181  ls
+ 1182  cd mileage_tracker/
+ 1183  pico db/migrate/
+ 1184  cd db/migrate/
+ 1185  ls
+ 1186  pico 20110309032636_create_vehicles.rb 
+ 1187  cd ../../..
+ 1188  cd mileage_tracker/
+ 1189  pico Gemfile
+ 1190  bundle
+ 1191  git add .
+ 1192  git commit -m "Added web-app-theme gem to Gemfile"
+ 1193  git status
+ 1194  rails g web_app_theme:theme --theme"warehouse" --app-name="Mileage Tracker"
+ 1195  git status
+ 1196  git add .
+ 1197  git diff
+ 1198  pico app/views/vehicles/index.html.erb 
+ 1199  rails destroy web_app_theme:theme --theme="warehouse" --app-name="Mileage Tracker"
+ 1200  rails g web_app_theme:theme --theme="warehouse" --app-name="Mileage Tracker"
+ 1201  git add .
+ 1202  git commit -m "Destroyed and then rebuilt warehouse theme as I had syntax wrong for last command"
+ 1203  git push
+ 1204  git status
+ 1205  pico app/views/vehicles/index.html.erb 
+ 1206  pico app/helpers/application_helper.rb 
+ 1207  pico app/views/layouts/application.html.erb 
+ 1208  pico app/helpers/application_helper.rb 
+ 1209  pico app/controllers/vehicles_controller.rb 
+ 1210  pico app/helpers/application_helper.rb 
+ 1211  pico app/views/layouts/application.html.erb 
+ 1212  pico app/helpers/application_helper.rb 
+ 1213  pico app/views/layouts/application.html.erb 
+ 1214  pico app/controllers/vehicles_controller.rb 
+ 1215  pico app/views/vehicles/index.html.erb 
+ 1216  git diff
+ 1217  git add .
+ 1218  git commit -m "Page titles"
+ 1219  git push
+ 1220  git status
+ 1221  cd ..
+ 1222  ls -lt | head
+ 1223  cd mileage_tracker/
+ 1224  pico .rvmrc
+ 1225  ls
+ 1226  gem list
+ 1227  bundle
+ 1228  git status
+ 1229  git add .
+ 1230  git commit -m "Added .rvmrc file"
+ 1231  git push
+ 1232  pico Gemfile
+ 1233  bundle
+ 1234  heroku help | less
+ 1235  heroku create lblechl_mileage_tracker_
+ 1236  heroku create lblechl-mileage-tracker
+ 1237  git remote -v
+ 1238  git push heroku
+ 1239  git push heroku master
+ 1240  heroku logs
+ 1241  heroku rake db:migrate
+ 1242  heroku restart
+ 1243  heroku log
+ 1244  heroku logs
+ 1245  pico app/views/layouts/application.html.erb 
+ 1246  git add .
+ 1247  git commit -m "Heroku production server"
+ 1248  pico Gemfile
+ 1249  bundle
+ 1250  git add .
+ 1251  git commit -m "Heroku production server"
+ 1252  git push heroku
+ 1253  heroku restart
+ 1254  pico app/views/layouts/application.html.erb 
+ 1255  git add .
+ 1256  git commit -m "Heroku production server 2"
+ 1257  git push heroku
+ 1258  pico config/routes.rb 
+ 1259  git add .
+ 1260  git commit -m "changed routes.rb"
+ 1261  cd public/
+ 1262  git rm index.html
+ 1263  cd ..
+ 1264  git status
+ 1265  git add .
+ 1266  git commit -m "Make My Vehicles the default page"
+ 1267  git status
+ 1268  git push
+ 1269  git push heroku
+ 1270  rake db:migrate
+ 1271  heroku rake db:migrate
+ 1272  exit
+ 1273  cd rails_projects/sample_app/
+ 1274  cd ..
+ 1275  gem list rails
+ 1276  rails new -T -J mileage_tracker
+ 1277  rails new mileage_tracker -T -J
+ 1278  ls
+ 1279  cd mileage_tracker/
+ 1280  git add .
+ 1281  git init
+ 1282  git add .
+ 1283  git commit -m "Initial commit"
+ 1284  git status
+ 1285  #git remote add origin git@github.com:lblechl/mileage_tracker.git
+ 1286  git remote
+ 1287  git remote add origin git@github.com:lblechl/mileage_tracker.git
+ 1288  git remote
+ 1289  git remote -v
+ 1290  git push -u origin master
+ 1291  git status
+ 1292  rails generate
+ 1293  rails generate scaffold Vehicle color:string year:integer license_plate_number:string
+ 1294  git status
+ 1295  git add .
+ 1296  git commit -m "Vehicle scaffold"
+ 1297  git status
+ 1298  rails s
+ 1299  rake db:migrate
+ 1300  rails s
+ 1301  exit
+ 1302  cd rails_projects/sample_app/
+ 1303  rails c
+ 1304  rails c --sandbox
+ 1305  exit
+ 1306  cd rails_projects/sample_app/
+ 1307  pico spec/models/user_spec.rb 
+ 1308  git add .
+ 1309  git commit -m "added password tests to spec/models/user_spec.rb"
+ 1310  pico spec/models/user_spec.rb 
+ 1311  pico app/models/user.rb
+ 1312  git add .
+ 1313  git commit -m "added password validations to app/models/user.rb"
+ 1314  rails console --sandbox
+ 1315  pico spec/models/user_spec.rb 
+ 1316  rails g migration add_password_to_users encrypted_password:string
+ 1317  ls
+ 1318  cd db/migrate/
+ 1319  ls
+ 1320  pico 20110309213211_add_password_to_users.rb 
+ 1321  rake db:migrate
+ 1322  rake db:test:prepare
+ 1323  cd ..
+ 1324  pico spec/models/user_spec.rb 
+ 1325  pico app/models/user.rb
+ 1326  pico spec/models/user_spec.rb 
+ 1327  pico app/models/user.rb
+ 1328  rails g migration add_salt_to_users salt:string
+ 1329  cd db/migrate/
+ 1330  ls
+ 1331  pico 20110310191850_add_salt_to_users.rb 
+ 1332  cd ../..
+ 1333  rake db:migrate
+ 1334  rake db:test:prepare
+ 1335  pico app/models/user.rb
+ 1336  pico spec/models/user_spec.rb 
+ 1337  git add .
+ 1338  git commit -m "Done upto 7.10"
+ 1339  pico spec/models/user_spec.rb 
+ 1340  git add .
+ 1341  git commit -m "Wrote tests for 7.11"
+ 1342  pico app/models/user.rb
+ 1343  git add .
+ 1344  git commit -m "Finished 7.2"
+ 1345  pico spec/controllers/users_controller_spec.rb 
+ 1346  pico app/controllers/users_controller.rb 
+ 1347  pico Gemfile
+ 1348  bundle install
+ 1349  pico spec/factories.rb
+ 1350  pico spec/controllers/users_controller_spec.rb 
+ 1351  git add .
+ 1352  git commit -m "Finished up to 7.17"
+ 1353  git add .
+ 1354  git commit -m "Up to 7.3.2"
+ 1355  rake db:reset
+ 1356  rails c
+ 1357  pico spec/controllers/users_controller_spec.rb
+ 1358  pico app/controllers/users_controller.rb 
+ 1359  pico app/views/users/show.html.erb 
+ 1360  pico Gemfile
+ 1361  bundle install
+ 1362  git add .
+ 1363  git commit -m "Got partway through 7.21 but to bundle install Gravatar gem must have internet connection"
+ 1364  bundle install
+ 1365  pico app/views/users/show.html.erb 
+ 1366  rails s
+ 1367  rails c
+ 1368  pico app/helpers/users_helper.rb 
+ 1369  pico app/views/users/show.html.erb 
+ 1370  git add .
+ 1371  git commit -m "Finished up to 7.3.3"
+ 1372  pico app/views/users/show.html.erb 
+ 1373  pico public/stylesheets/custom.css 
+ 1374  git branch
+ 1375  git add .
+ 1376  git commit -m "User model with passwords, and user show page"
+ 1377  git co master
+ 1378  git branch
+ 1379  git co modeling-users 
+ 1380  git add .
+ 1381  git commit -m "User model with passwords, and user show page complete"
+ 1382  git co master
+ 1383  git merge modeling-users
+ 1384  git push heroku
+ 1385  git push heroku master
+ 1386  heroku rake db:migrate
+ 1387  heroku console
+ 1388  pico app/models/user.rb
+ 1389  git add .
+ 1390  git commit -m "Exercise 7.5 part 1 Done and test passed"
+ 1391  pico app/models/user.rb
+ 1392  git commit -m "Exercise 7.5 part 2 Done and test passed"
+ 1393  git add .
+ 1394  git commit -m "Exercise 7.5 part 2 Done and test passed"
+ 1395  rails c
+ 1396  git push master
+ 1397  git push
+ 1398  exit
+ 1399  cd rails_projects/sample_app/
+ 1400  rails s
+ 1401  exit
+ 1402  cd rails_projects/sample_app/
+ 1403  heroku open
+ 1404  rspec spec/models/user_spec.rb 
+ 1405  rspec spec/models/user_spec.rb -e "should have an encrypted password attribute"
+ 1406  rspec spec/models/user_spec.rb 
+ 1407  rspec spec/models/user_spec.rb -e "should be true if the passwords match"
+ 1408  rspec spec/models/user_spec.rb 
+ 1409  rspec spec/models/user_spec.rb -e "should be true if the passwords match"
+ 1410  rspec spec/models/user_spec.rb 
+ 1411  rspec spec/models/user_spec.rb -e "should be false if the password don't match"
+ 1412  rspec spec/models/user_spec.rb -e "should be false if the passwords don't match"
+ 1413  rspec spec/models/user_spec.rb -e "has_password\? method"
+ 1414  rspec spec/models/user_spec.rb 
+ 1415  rspec spec/controllers/users_controller_spec.rb 
+ 1416  rspec spec/models/user_spec.rb 
+ 1417  cd rails_projects/sample_app/
+ 1418  rails s
+ 1419  rails console
+ 1420  rails s
+ 1421  rails c
+ 1422  rails s
+ 1423  exit
+ 1424  cd rails_projects/sample_app/
+ 1425  pico spec/controllers/users_controller_spec.rb 
+ 1426  pico app/controllers/users_controller.rb 
+ 1427  git add .
+ 1428  git commit -m "Finished up to 8.2.3"
+ 1429  pico app/views/users/new.html.erb 
+ 1430  cd app/views/
+ 1431  ls
+ 1432  mkdir shared
+ 1433  cd shared/
+ 1434  pico _error_messages.html.erb
+ 1435  cd ../..
+ 1436  cd ..
+ 1437  pico public/stylesheets/custom.css 
+ 1438  git add .
+ 1439  git commit -m "Finished up to 8.2.4"
+ 1440  git add .
+ 1441  git commit -m "Finished up to 8.3"
+ 1442  pico spec/controllers/users_controller_spec.rb 
+ 1443  git add .
+ 1444  git commit -m "Finished up to 8.3.2"
+ 1445  pico app/controllers/users_controller.rb 
+ 1446  git add .
+ 1447  git commit -m "Finished up to 8.3.3"
+ 1448  pico app/views/layouts/application.html.erb 
+ 1449  git add .
+ 1450  git commit -m "Finished up to 8.17"
+ 1451  pico spec/controllers/users_controller_spec.rb 
+ 1452  pico app/controllers/users_controller.rb 
+ 1453  git add .
+ 1454  git commit -m "Finished up to 8.3.4"
+ 1455  git add .
+ 1456  git commit -m "Finished up to 8.4"
+ 1457  rails g integration_test users
+ 1458  pico spec/requests/users_spec.rb 
+ 1459  git add .
+ 1460  git commit -m "Finished up to 8.4.3"
+ 1461  pico spec/controllers/users_controller_spec.rb 
+ 1462  git add .
+ 1463  git commit -m "Fixed rspec from 8.17 so all tests passed"
+ 1464  pico spec/requests/us
+ 1465  pico spec/requests/users_spec.rb 
+ 1466  git add .
+ 1467  git commit -m "User signup complete"
+ 1468  git co master
+ 1469  git merge signing-up 
+ 1470  pico spec/controllers/users_controller_spec.rb 
+ 1471  git add .
+ 1472  git commit -m "Finished part 1 of 8.6"
+ 1473  pico spec/controllers/users_controller_spec.rb 
+ 1474  cd app/
+ 1475  ls
+ 1476  cd controllers/
+ 1477  ls
+ 1478  pico users_controller.rb 
+ 1479  git add .
+ 1480  git commit -m "Finished part 2 of 8.6, Although a sloppy fix"
+ 1481  cd ../../..
+ 1482  cd sample_app/
+ 1483  pico app/views/layouts/application.html.erb 
+ 1484  git add .
+ 1485  git commit -m "Finished Chapter 8"
+ 1486  git push
+ 1487  git push heroku
+ 1488  exit
+ 1489  cd rails_projects/sample_app/
+ 1490  rake db:reset
+ 1491  git co master
+ 1492  git co -b signing-up
+ 1493  pico spec/controllers/users_controller_spec.rb 
+ 1494  pico app/views/users/new.html.erb 
+ 1495  rspec spec/
+ 1496  rspec spec/controllers/users_controller_spec.rb 
+ 1497  pico app/controllers/users_controller.rb 
+ 1498  pico public/stylesheets/custom.css 
+ 1499  rails s
+ 1500  git add .
+ 1501  git commit -m "Finished up to 8.1.2"
+ 1502  git add .
+ 1503  git commit -m "Finished up to 8.2"
+ 1504  git add .
+ 1505  git commit -m "Finished up to 8.2.2"
+ 1506  rspec spec/controllers/users_controller_spec.rb 
+ 1507  rspec spec/controllers/
+ 1508  git add .
+ 1509  git commit -m "Fixed rspec file from 8.2.2 as it was not running properly"
+ 1510  rspec spec/controllers/
+ 1511  pico spec/controllers/users_controller_spec.rb 
+ 1512  rspec spec/controllers/
+ 1513  rspec spec/requests/users_spec.rb 
+ 1514  git add .
+ 1515  git commit -m "Finished up to 8.5"
+ 1516  rspec spec/controllers/users_controller_spec.rb 
+ 1517  rspec spec/controllers/
+ 1518  exit
+ 1519  cd rails_projects/mileage_tracker/
+ 1520  git remote
+ 1521  git remote -v
+ 1522  cd ..
+ 1523  mv mileage_tracker mileage_tracker_old
+ 1524  git clone git@github.com:lblechl/mileage_tracker.git
+ 1525  rake db:migrate
+ 1526  cd mileage_tracker
+ 1527  rake db:migrate
+ 1528  rails c
+ 1529  cat .rvmrc
+ 1530  cd ..
+ 1531  cd mileage_tracker
+ 1532  rvm info
+ 1533  cat .rvmrc
+ 1534  rvm gemset use 1.9.2@mileage_tracker
+ 1535  pico .rvmrc
+ 1536  cd ..
+ 1537  cd mileage_tracker
+ 1538  rvm info
+ 1539  gem list
+ 1540  gem install bundler
+ 1541  gem list -r linecache
+ 1542  mate .
+ 1543  pico Gemfile
+ 1544  bundle install
+ 1545  gem list
+ 1546  pico Gemfile
+ 1547  bundle install
+ 1548  pico Gemfile
+ 1549  bundle install
+ 1550  rake
+ 1551  ls
+ 1552  rspec spec/models/make_spec.rb
+ 1553  rake db:migrate
+ 1554  cd ..
+ 1555  mv mileage_tracker mileage_tracker_bad
+ 1556  git clone git@github.com:lblechl/mileage_tracker.git
+ 1557  cd mileage_tracker
+ 1558  pico Gemfile
+ 1559  rvm info
+ 1560  rvm list
+ 1561  rvm 1.9.2
+ 1562  pico
+ 1563  pico .rvmrc
+ 1564  cd ..
+ 1565  cd mileage_tracker
+ 1566  rvm info
+ 1567  gem list
+ 1568  bundle
+ 1569  rake
+ 1570  rake db:migrate
+ 1571  rspec spec/models/make_spec.rb 
+ 1572  git status
+ 1573  git add .
+ 1574  git commit -m "Switch to ruby 1.9.2"
+ 1575  git co -b make_tests_pass
+ 1576  git status
+ 1577  rspec spec/models/make_spec.rb 
+ 1578  rails generate model Make name:string
+ 1579  pico app/models/make.rb 
+ 1580  rspec spec/models/make_spec.rb 
+ 1581  rake db:migrate
+ 1582  pico spec/models/make_spec.rb 
+ 1583  pico app/models/make.rb 
+ 1584  rspec spec/models/make_spec.rb 
+ 1585  rake db:migrate
+ 1586  rake db:test prepare
+ 1587  rake db:test:prepare
+ 1588  rspec spec/models/make_spec.rb 
+ 1589  rails generate model Model make_id:integer name:string
+ 1590  rake db:migrate
+ 1591  rake db:test:prepare
+ 1592  clear
+ 1593  rspec spec/models/make_spec.rb
+ 1594  pico app/models/make.rb 
+ 1595  rspec spec/models/make_spec.rb
+ 1596  git add .
+ 1597  git commit -m "Made make spec pass"
+ 1598  pico spec/models/model_spec.rb 
+ 1599  rspec spec/models/model_spec.rb 
+ 1600  pico app/models/model.rb 
+ 1601  rspec spec/models/model_spec.rb 
+ 1602  pico app/models/model.rb 
+ 1603  rspec spec/models/model_spec.rb 
+ 1604  pico app/models/model.rb 
+ 1605  pico db/schema.rb 
+ 1606  rails g migration add_model_id_to_vehicles
+ 1607  rails destroy migration add_model_id_to_vehicles
+ 1608  rails g migration add_model_id_to_vehicles model_id:integer
+ 1609  cd db/migrate/
+ 1610  ls
+ 1611  pico 20110323034804_add_model_id_to_vehicles.rb 
+ 1612  cd ../..
+ 1613  rake db:migrate && rake db:test:prepare
+ 1614  rspec spec/models/model_spec.rb 
+ 1615  pico app/models/model.rb 
+ 1616  rspec spec/models/model_spec.rb 
+ 1617  git status
+ 1618  git add .
+ 1619  git commit -m "make spec.rb and models_spec.rb now pass"
+ 1620  git status
+ 1621  rspec spec/models/vehicle_spec.rb 
+ 1622  pico app/models/vehicle.rb 
+ 1623  rspec spec/models/vehicle_spec.rb 
+ 1624  pico app/models/vehicle.rb 
+ 1625  rspec spec/models/vehicle_spec.rb 
+ 1626  pico spec/models/mileage_spec.rb 
+ 1627  rails generate model Mileage vehicle_id :integer filled_tank_at:time miles:decimal gallons:decimal
+ 1628  rails generate model Mileage vehicle_id:integer filled_tank_at:time miles:decimal gallons:decimal
+ 1629  rake db:migrate && rake db:test:prepare
+ 1630  rspec spec/models/mileage_spec.rb 
+ 1631  cd rails_projects/mileage_tracker
+ 1632  pico spec/models/vehicle_spec.rb 
+ 1633  pico spec/models/mileage_spec.rb 
+ 1634  pico app/models/vehicle.rb 
+ 1635  rspec spec/models/vehicle_spec.rb 
+ 1636  pico app/models/vehicle.rb 
+ 1637  rspec spec/models/vehicle_spec.rb 
+ 1638  pico app/models/vehicle.rb 
+ 1639  rspec spec/models/vehicle_spec.rb 
+ 1640  pico app/models/vehicle.rb 
+ 1641  rspec spec/models/vehicle_spec.rb 
+ 1642  rake spec:models
+ 1643  rspec spec/controllers/vehicles_controller_spec.rb 
+ 1644  rspico spec/controllers/vehicles_controller_spec.rb 
+ 1645  pico spec/controllers/vehicles_controller_spec.rb 
+ 1646  cd db/
+ 1647  ls
+ 1648  cd migrate/
+ 1649  ls
+ 1650  rake spec:models
+ 1651  rake spec:controllers
+ 1652  cd ../..
+ 1653  pico spec/controllers/vehicles_controller_spec.rb 
+ 1654  rspec spec/controllers/vehicles_controller_spec.rb 
+ 1655  git add .
+ 1656  git commit -m "All tests passed"
+ 1657  git co master
+ 1658  git branch
+ 1659  git status
+ 1660  git merge make_tests_pass 
+ 1661  git status
+ 1662  git push
+ 1663  cd rails_projects/sample_app/
+ 1664  rails s
+ 1665  rails c
+ 1666  cd rails_projects/mileage_tracker
+ 1667  pico app/models/mileage.rb 
+ 1668  cd db/migrate/
+ 1669  ls
+ 1670  pico 20110323033601_create_models.rb 
+ 1671  ls
+ 1672  pico 20110323035845_create_mileages.rb 
+ 1673  rake db:migrate
+ 1674  rake db:migrate:redo
+ 1675  cd ..
+ 1676  rake db:test:prepare
+ 1677  rspec spec/models/mileage_spec.rb 
+ 1678  rake db:migrate
+ 1679  rake db:test:prepare
+ 1680  rspec spec/models/mileage_spec.rb 
+ 1681  rake db:migrate:redo
+ 1682  rake db:test:prepare
+ 1683  rspec spec/models/mileage_spec.rb 
+ 1684  pico 20110323035845_create_mileages.rb 
+ 1685  pico db/migrate/20110323035845_create_mileages.rb 
+ 1686  rspec spec/models/mileage_spec.rb 
+ 1687  pico app/models/
+ 1688  ls
+ 1689  cd app/models/
+ 1690  ls
+ 1691  pico vehicle.rb 
+ 1692  pico mileage.rb 
+ 1693  pico app/models/mileage.rb 
+ 1694  cd ../..
+ 1695  pico app/models/mileage.rb 
+ 1696  pico db/migrate/20110323033601_create_models.rb 
+ 1697  rspec spec/models/mileage_spec.rb 
+ 1698  pico spec/models/mileage_spec.rb 
+ 1699  rake db:migrate
+ 1700  rake db:test:prepare
+ 1701  pico spec/models/mileage_spec.rb 
+ 1702  rspec spec/models/mileage_spec.rb 
+ 1703  rails generate model Mileage vehicle_id:integer filled_tank_on:time miles:decimal gallons:decimal
+ 1704  cd db/migrate/
+ 1705  ls
+ 1706  ls -lta
+ 1707  ls -ltr
+ 1708  pico 20110323035845_create_mileages.rb 
+ 1709  cd ..
+ 1710  ls
+ 1711  pico schema.rb 
+ 1712  pico spec/models/mileage_spec.rb 
+ 1713  cd ..
+ 1714  pico spec/models/mileage_spec.rb 
+ 1715  spec spec/models/mileage_spec.rb 
+ 1716  rspec spec/models/mileage_spec.rb 
+ 1717  pico app/controllers/vehicles_controller.rb 
+ 1718  exit
+ 1719  mate.
+ 1720  .mate
+ 1721  exit
+ 1722  cd rails_projects/mileage_tracker
+ 1723  rails s
+ 1724  pico app/controllers/vehicles_controller.rb 
+ 1725  pico app/views/
+ 1726  cd app/views/
+ 1727  ls
+ 1728  pico vehicles/
+ 1729  cd vehicles/
+ 1730  ls
+ 1731  pico _form.html.erb 
+ 1732  rails s
+ 1733  cd rails_projects/
+ 1734  irb
+ 1735  cd mileage_tracker
+ 1736  git status
+ 1737  git pull
+ 1738  rake
+ 1739  pico features/support/paths.rb 
+ 1740  rake routes
+ 1741  pico features/support/paths.rb 
+ 1742  pico app/models/vehicle.rb 
+ 1743  pico app/views/vehicles/new.html.erb 
+ 1744  pico app/views/vehicles/_form.html.erb 
+ 1745  rails c
+ 1746  cd app/views/
+ 1747  ls
+ 1748  cd vehicles/
+ 1749  ls
+ 1750  pico show.html.erb 
+ 1751  cd rails_projects/mileage_tracker
+ 1752  pico features/user_creates_new_vehicle.feature 
+ 1753  rake features
+ 1754  pico features/user_creates_new_vehicle.feature 
+ 1755  rake cucumber
+ 1756  pico features/user_creates_new_vehicle.feature 
+ 1757  cd db
+ 1758  ls
+ 1759  cd ..
+ 1760  pico db/seeds.rb 
+ 1761  rake db:seed
+ 1762  pico db/seeds.rb 
+ 1763  rake db:seed
+ 1764  pico features/user_creates_new_vehicle.feature 
+ 1765  pico app/views/vehicles/_form.html.erb 
+ 1766  pico app/controllers/vehicles_controller.rb 
+ 1767  pico app/views/vehicles/_form.html.erb 
+ 1768  git add .
+ 1769  git commit -m "added drop down menu"
+ 1770  pico app/views/vehicles/show.html.erb 
+ 1771  pico db/seeds.rb 
+ 1772  rake db:seeds
+ 1773  rake db:seed
+ 1774  rake cucumber
+ 1775  rake
+ 1776  git add .
+ 1777  git diff
+ 1778  pico db/seeds.rb 
+ 1779  git commit -m "Cleaned up code and ensured all tests passed"
+ 1780  git status
+ 1781  git push
+ 1782  pico app/views/vehicles/
+ 1783  pico app/views/vehicles/edit.html.erb 
+ 1784  pico app/views/vehicles/show.html.erb 
+ 1785  rake Cucumber
+ 1786  rake cucumber
+ 1787  git diff
+ 1788  git add .
+ 1789  git commit -m "Changed Back to List in vehicles views files"
+ 1790  git push
+ 1791  pico app/views/vehicles/edit.html.erb 
+ 1792  pico app/views/vehicles/_form.html.erb 
+ 1793  pico features/user_creates_new_vehicle.feature 
+ 1794  pico features/step_definitions/vehicle_steps.rb
+ 1795  pico app/views/vehicles/index.html.erb 
+ 1796  git add .
+ 1797  git commit -m "Changed Destroyed to Delete in app-views-vehicles-index.html.erb also missing user_deletes_vehicle.features in features-support folder as well as created another file but commented out that need to get from github"
+ 1798  rake routes
+ 1799  cd rails_projects/hotdog_lab/
+ 1800  rails c
+ 1801  rvm info
+ 1802  cd ..
+ 1803  pico .rvmrc
+ 1804  cd sample_app/
+ 1805  pico .rvmrc
+ 1806  rvm gemset list_all
+ 1807  pico .rvmrc
+ 1808  rvm 1.9.2@rails3tutorial
+ 1809  gem list
+ 1810  history > history_of_rvm.txt

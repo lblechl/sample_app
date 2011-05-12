@@ -4,4 +4,8 @@ log/*.log
 tmp/**/*
 webrat.log
 db/*.sqlite3-journal
+<<<<<<< HEAD
 gems
+=======
+gems/*
+>>>>>>> updating-users
