@@ -11,6 +11,7 @@
 #
 
 require 'digest'
+
 class User < ActiveRecord::Base
   attr_accessor :password
   attr_accessible :name, :email, :password, :password_confirmation
@@ -56,8 +57,7 @@ class User < ActiveRecord::Base
   end
 
   def feed
-    #see chp. 12 for full implementation
-    Micropost.where("user_id = ?", id)
+    Micropost.from_users_followed_by(self)
   end
 
   def following?(followed)
