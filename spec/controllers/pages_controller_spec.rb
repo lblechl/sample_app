@@ -10,6 +10,12 @@ describe PagesController do
   end
 
   describe "GET 'home'" do
+    before(:each) do
+      @user = test_sign_in(Factory(:user))
+      @mp1 = Factory(:micropost, :user => @user, :content => "Foo bar")
+    end
+
+
     it "should be successful" do
       get 'home'
       response.should be_success
@@ -22,13 +28,13 @@ describe PagesController do
     end
 
     it "should have a sidebar listing microposts" do
-      get :home    
+      get :home, :id => @user   
       response.should have_selector("span", :class => "microposts", :content => "1 micropost")
     end
 
     it "should pluralize the microposts correctly" do
       @mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
-      get 'home'    
+      get 'home', :id => @user
       response.should have_selector("span", :class => "microposts", :content => "2 microposts")
     end
   end

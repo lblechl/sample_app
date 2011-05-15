@@ -60,6 +60,7 @@ describe UsersController do
     before(:each) do
       @user = Factory(:user)
       @mp1 = Factory(:micropost, :user => @user, :content => "Foo bar")
+      @mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
     end
 
     it "should be successful" do
@@ -88,7 +89,6 @@ describe UsersController do
     end
 
     it "should show the user's microposts" do
-      @mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
       get :show, :id => @user
       response.should have_selector("span.content", :content => @mp1.content)
       response.should have_selector("span.content", :content => @mp2.content)
@@ -351,12 +351,11 @@ describe UsersController do
         get :index, :id => @admin         
         response.should have_selector("a", :content => "delete") unless have_selector("a", :content => @admin.name)
       end
-      
+  
       it "should not show a delete button for its own user" do
         get :index
         response.should_not have_selector("a", :href => "/users/#{@admin.id}", :content => "delete")
       end
-      
     end
   end
 end
