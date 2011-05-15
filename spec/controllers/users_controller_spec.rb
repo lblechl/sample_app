@@ -59,6 +59,7 @@ describe UsersController do
     
     before(:each) do
       @user = Factory(:user)
+      @mp1 = Factory(:micropost, :user => @user, :content => "Foo bar")
     end
 
     it "should be successful" do
@@ -87,11 +88,10 @@ describe UsersController do
     end
 
     it "should show the user's microposts" do
-      mp1 = Factory(:micropost, :user => @user, :content => "Foo bar")
-      mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
+      @mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
       get :show, :id => @user
-      response.should have_selector("span.content", :content => mp1.content)
-      response.should have_selector("span.content", :content => mp2.content)
+      response.should have_selector("span.content", :content => @mp1.content)
+      response.should have_selector("span.content", :content => @mp2.content)
     end
   end
 
@@ -207,6 +207,7 @@ describe UsersController do
                                          :content => "change")
     end
   end
+
   describe "PUT 'update'" do
 
     before(:each) do
@@ -257,6 +258,7 @@ describe UsersController do
       end
     end
   end
+
   describe "authentication of edit/update pages" do
 
     before(:each) do

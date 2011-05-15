@@ -20,6 +20,17 @@ describe PagesController do
       response.should have_selector("title",
                                     :content => @base_title + " | Home")
     end
+
+    it "should have a sidebar listing microposts" do
+      get :home    
+      response.should have_selector("span", :class => "microposts", :content => "1 micropost")
+    end
+
+    it "should pluralize the microposts correctly" do
+      @mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
+      get 'home'    
+      response.should have_selector("span", :class => "microposts", :content => "2 microposts")
+    end
   end
 
   describe "GET 'contact'" do
