@@ -63,6 +63,14 @@ describe UsersController do
       @mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
     end
 
+
+    it "should not show a delete button for microposts the user didn't create" do
+      test_sign_in(@user)
+      @second = Factory(:user, :name => "Joe", :email => "yetanother@example.com")
+      get :show, :id => @second
+      response.should_not have_selector("a", :content => "delete")
+    end
+
     it "should be successful" do
       get :show, :id => @user
       response.should be_success
