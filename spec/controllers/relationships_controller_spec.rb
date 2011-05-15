@@ -61,4 +61,3 @@ describe RelationshipsController do
     end
   end
 end
-
